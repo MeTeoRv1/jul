@@ -22,6 +22,7 @@ void	ft_ecrire_caractere(char c)
  *
  * Créer un tableau de 5 par 5.
  */
+ 
 int	**init_tableau()
 {
 	int **tableau, i, j;
@@ -37,6 +38,16 @@ int	**init_tableau()
 	return(tableau);
 }
 
+
+/**
+ * \fn void free_tableau(int **tableau)
+ * \brief Liberez un tableau de la memoire.
+ *
+ * \param tableau Le tableau a liberer.
+ *
+ * Liberer la memoire prise par le tableau.
+ */
+ 
 void	free_tableau(int **tableau)
 {
 	int i = 4;
@@ -47,6 +58,15 @@ void	free_tableau(int **tableau)
 	}
 	free(tableau);
 }
+
+/**
+ * \fn void afficher_tableau(int **tableau)
+ * \brief Afficher un tableau.
+ *
+ * \param tableau Le tableau a afficher.
+ *
+ * Affiche un tableau sur la sortie standard.
+ */
 
 void	afficher_tableau(int **tableau)
 {
@@ -63,6 +83,15 @@ void	afficher_tableau(int **tableau)
 		ft_ecrire_caractere('\n');
 	}
 }
+
+/**
+ * \fn void modifie(int **tableau)
+ * \brief Modifier un tableau.
+ *
+ * \param tableau Le tableau a modifier.
+ *
+ * Modifie le caractere central d'un tableau.
+ */
 
 void	modifier_tableau(int **tableau)
 {
