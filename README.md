@@ -1,11 +1,27 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
+/**
+ * \fn void ft_putchar(char c)
+ * \brief Écrire un caractère
+ *
+ * \param c Le caractère a écrire.
+ *
+ * Écrire le caractère.
+ */
 void	ft_ecrire_caractere(char c)
 {
 	write(1, &c, 1);
 }
 
+
+/**
+ * \fn int **init_tableau()
+ * \brief Initialiser le tableau.
+ *
+ * Créer un tableau de 5 par 5.
+ */
 int	**init_tableau()
 {
 	int **tableau, i, j;
